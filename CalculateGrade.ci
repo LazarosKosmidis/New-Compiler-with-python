@@ -1,0 +1,22 @@
+#To parakatw programma ypologizei to synoliko vathmo tou mathimatos#
+program CalculateGrade
+{
+    declare x,y,z;
+    function calculate(in ExamsGrade,in ProjectGrade)
+    {
+        if(ProjectGrade >= 5 and ExamsGrade>=5)      
+            FinalGrade := ProjectGrade+ExamsGrade*50/100;
+            return(FinalGrade);
+        
+        else
+            FinalGrade := ExamsGrade;
+            return(FinalGrade);
+        
+        
+    }
+    #main#
+    input(x);
+    input(y);
+    z:=calculate(in x,in y);
+    print(z);
+}.
